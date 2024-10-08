@@ -18,8 +18,9 @@ public class StackUsingArray {
         push(20);
         push(30);
         System.out.println("After push : " + numbers);
-        //pop();
+        pop();
         peek();
+        System.out.println("Is the stack empty: "+isEmpty());
 
     }
     public static void push(Integer n){
@@ -34,5 +35,9 @@ public class StackUsingArray {
     public static void peek(){
         Integer x = numbers.getFirst();
         System.out.println("The element on top is : "+ x);
+    }
+    public static Boolean isEmpty(){
+        return numbers.isEmpty();
+
     }
 }
